@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endurance</title>
+    <link rel="stylesheet" href="/styleSheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="main">
+        <nav>
+            <div>
+                <a href="/"><i class="fa-solid fa-person-running"></i></a>
+            </div>
+            <div>
+                <a href="./consultator.html"><i class="fa-solid fa-stethoscope" style="opacity: 1;"></i></a>
+            </div>
+            <div>
+                <a href="./profile.html"><i class="fa-regular fa-user"></i></a>
+            </div>
+            <div>
+                <a href="./notification.html"><i class="fa-regular fa-bell"></i></a>
+            </div>
+            <div>
+                <a href="./setting.html"><i class="fa-solid fa-bars-staggered"></i></a>
+            </div>
+        </nav>
+        <div id="searchPage">
+            <form action="">
+                <div class="search-container">
+                    <input type="search" name="search" id="srch" placeholder="Search...">
+                    <input type="submit" id="sub">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </form>
+            <h2>searched results</h2>
+            <a href="expert.html" style="text-decoration: none;">
+                <div id="card">
+                    <div id="image">
+                        <img src="./images/istockphoto-179011088-612x612.jpg" alt="consultator">
+                    </div>
+                    <div id="txtera">
+                        <h1>Dr. Arjun Verma</h1>
+                        <p>Expert in Exercise and Fitness Optimization</p>
+                    </div>
+                    <div id="ratting">
+                        <div id="star">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <div id="pt">1250+</div>
+                    </div>
+                </div>
+            </a>
+            <a href="expert2.html" style="text-decoration: none;">
+                <div id="card">
+                    <div id="image">
+                        <img src="./images/woman-doctor-icon-doctor-woman-with-stereoscopic-glyph-isolated-blue-background-vector.jpg" alt="consultator">
+                    </div>
+                    <div id="txtera">
+                        <h1>Dr. Anurima Pal</h1>
+                        <p>Experienced in Yoga and Human Welbeing</p>
+                    </div>
+                    <div id="ratting">
+                        <div id="star">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <div id="pt">1250+</div>
+                    </div>
+                </div>
+            </a>
+            <p id="p">End of results</p>
+        </div>
+        <footer style="background-color: #000; margin: 0; padding: 0; width: 100%; border: none; opacity: 1;">
+        </footer>
+        
+    </div>
+
+    <script>
+        document.querySelector('.fa-eye').addEventListener('click', function() {
+            document.getElementById('sub').click(); 
+        });
+    </script>
+</html>

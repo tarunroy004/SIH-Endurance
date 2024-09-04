@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endurance</title>
+    <link rel="stylesheet" href="./styleSheets/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #main {
+            padding: 70px 22px 22px 22px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        #who {
+            font-family: Gilroy;
+            color: #ffffff;;
+            font-size: 1.5rem;
+            line-height: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            /* gap: 10px; */
+            width: 100%;
+        }
+        form input {
+            border: 2px solid #ffffff;
+            background-color: transparent;
+            border-radius: 10px;
+            width: 100%;
+            font-size: 1.5rem;
+            padding: 5px;
+            color: #fff;
+        }
+        form label {
+            text-transform: uppercase;
+            color: #fff;
+            font-family: Gilroy-light;
+            font-size: 1rem;
+            margin: 10px 0 3px 5px;
+        }
+        form label a {
+            color: rgb(174, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <nav>
+            <div>
+                <i class="fa-solid fa-person-running" style="opacity: 1;"></i>
+            </div>
+            <div>
+                <a href="./consultator.html"><i class="fa-solid fa-stethoscope"></i></a>
+            </div>
+            <div>
+                <a href="./profile.html"><i class="fa-regular fa-user"></i></a>
+            </div>
+            <div>
+                <a href="./notification.html"><i class="fa-regular fa-bell"></i></a>
+            </div>
+            <div>
+                <a href="./setting.html"><i class="fa-solid fa-bars-staggered"></i></a>
+            </div>
+        </nav>
+        <h1 id="who" style="font-size: 3rem;">PUSH TODAY</h1>
+        <h1 id="who" style="font-family: Gilroy-light; font-size: 1.4rem;">CONQUER TOMORROW</h1>
+        <form action="">
+            <label for="">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="">Full Name</label>
+            <input type="text" name="fullname" id="fname">
+            <label for="">Date of Birth</label>
+            <input type="date" name="dob" id="dob">
+            <label for="">Weight</label>
+            <input type="number" name="weight" id="weight">
+            <label for="">Height</label>
+            <input type="number" name="height" id="height">
+            <label for="">Blood Pressure</label>
+            <input type="text" name="bpo" id="bpo">
+            <label for="">Daily Water intake</label>
+            <input type="text" name="watertake" id="watertake">
+            <div style="padding-left: 5px; text-transform: uppercase; display: flex; justify-content: flex-start; align-items: center;">
+                <input type="checkbox" value="privacy" style="height: 12px; width: 12px; margin: 0; padding: 0;" required>
+                <label style="font-size: .67rem; display: flex; align-items: center; padding-bottom: 5px;" for="">i agree with the <a href="#">Privacy Policy</a> and <a href="#">terms & condition</a></label>
+            </div>
+            <input style="margin-top: 15px; border: none; background-color: rgb(27, 129, 245);" type="submit" value="Create account" >
+        </form>
+        <footer>
+            <h2>Consistency Builds Strength.</h2>
+        </footer>
+    </div>
+</body>
+</html>

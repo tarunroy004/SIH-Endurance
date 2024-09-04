@@ -1,0 +1,255 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(/fonts/Gilroy-Black.woff2);
+}
+  
+@font-face {
+    font-family: Gilroy-sbold;
+    src: url(/fonts/Gilroy-SemiBold.woff2);
+}
+  
+@font-face {
+    font-family: Gilroy-light;
+    src: url(/fonts/Gilroy-Light.woff2);
+}
+  
+@font-face {
+    font-family: Gilroy-thin;
+    src: url(/fonts/Gilroy-Thin.woff2);
+}
+  
+@font-face {
+    font-family: Gilroy-med;
+    src: url(/fonts/Gilroy-Medium.woff2);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Index.HTML */
+
+#main {
+    min-height: 100vh;
+    width: 100%;
+    background: #000;
+    position: relative;
+}
+
+#main nav {
+    z-index: 999;
+    height: 12%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(transparent, #000);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav i {
+    color : #fff;
+    opacity: 0.7;
+    font-size: 1.5rem;
+    padding: 8px;
+    border-radius: 50px;
+}
+
+#top  {
+    padding: 7vh 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#top #image {
+    height: 110px;
+    width: 110px;
+    background: url(/images/istockphoto-179011088-612x612.jpg);
+    border-radius: 100px;
+    background-size: cover;
+}
+
+#top #right {
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 3px;
+}
+
+#top #right h1 {
+    font-family: Gilroy-sbold;
+    font-size: 1.7rem;
+}
+
+#top #right #bot {
+    display: flex;
+    align-items: flex-end;
+}
+
+#top #right #bot p {
+    font-family: Gilroy-light;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+#top #right #bot h2 {
+    margin-left: 10vw;
+    font-family: Gilroy-light;
+    font-size: 0.8rem;
+}
+
+#top #right #bot h2 i {
+    font-size: 0.7rem;
+    text-align: end;
+}
+
+#sts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    margin-top: 20px;
+}
+
+#sts h2 {
+    color: #ffffff75;
+    font-family: Gilroy-thin;
+    font-size: 1rem;
+}
+
+#sts .mnth {
+    background-color: #dadada70;
+    border-radius: 100px;
+    padding: 3px 8px;
+}
+
+#num {
+    display: flex;
+    align-items: flex-end;
+}
+
+#num #left {
+    color: #ffffff;
+    font-family: Gilroy-light;
+    font-size: 10rem;
+}
+
+#num #right {
+    color: #ffffff;
+    font-family: Gilroy-light;
+    font-size: 1.5rem;
+    margin-bottom: 33px;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#cards #top {
+    margin-top: -40px;
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+#cards #bot {
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    gap: 15px;
+}
+
+#cards #card {
+    padding: 10px;
+    height: 100px;
+    width: 50%;
+    background-color: #ffffff15;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cards #card h1 {
+    margin: 0 10px;
+    font-family: Gilroy-sbold;
+    color: #fff;
+    font-size: 4.5rem;
+}
+
+#cards #card #right {
+    color: #ffffff99;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-family: Gilroy-light;
+}
+
+#cards #card #right h2 {
+    font-size: 1.2rem;
+    align-self: self-end;
+}
+
+#cards #card #right p {
+    text-align: end;
+}
+
+#info {
+    margin: 5vh 0 0 0;
+    padding: 0 21px;
+    color: #ffffff99;
+    font-family: Gilroy-thin;
+    font-size: 0.8rem;
+}
+
+#contact {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+#contact a {
+    font-family: Gilroy-sbold;
+    font-size: 0.8rem;
+    color: #fff;
+    width: 40%;
+}
+
+#contact #mssg, #call {
+    color: #fff;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 20px;
+    border-radius: 100px;
+    font-family: Gilroy-sbold;
+    font-size: 1.1rem;
+}
+
+footer {
+    padding: 15px 22px 12vh 22px;
+}
+
+footer h2 {
+    font-family: Gilroy-thin;
+    font-size: 0.8rem;
+    color: #ffffff75;
+    border-top: 1px solid #ffffff99;
+}

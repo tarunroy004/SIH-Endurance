@@ -1,0 +1,466 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(/fonts/Gilroy-Black.woff2);
+}
+  
+@font-face {
+    font-family: Gilroy-sbold;
+    src: url(/fonts/Gilroy-SemiBold.woff2);
+}
+  
+@font-face {
+    font-family: Gilroy-light;
+    src: url(/fonts/Gilroy-Light.woff2);
+}
+  
+@font-face {
+    font-family: Gilroy-thin;
+    src: url(/fonts/Gilroy-Thin.woff2);
+}
+  
+@font-face {
+    font-family: Gilroy-med;
+    src: url(/fonts/Gilroy-Medium.woff2);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Index.HTML */
+
+#main {
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    position: relative;
+}
+
+#main nav {
+    z-index: 999;
+    height: 12%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(transparent, #000);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav i {
+    color : #fff;
+    opacity: 0.7;
+    font-size: 1.5rem;
+    padding: 8px;
+    border-radius: 50px;
+}
+
+#circle {
+    z-index: 10;
+    height: 450px;
+    width: 450px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.circle1_container {
+    height: 450px;
+    width: 450px;
+    background-size: cover;
+    background-position: cover;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    filter: blur(20px);
+}
+.circle1 {
+    height: 420px;
+    width: 420px;
+    border-radius: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: #000;
+}
+
+.circle2_container {
+    height: 280px;
+    width: 280px;
+    background: url('./images/pexels-codioful-6985003.jpg');
+    background-size: cover;
+    background-position: cover;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(11px);
+}
+.circle2 {
+    height: 265px;
+    width: 265px;
+    border-radius: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: #000;
+}
+
+.circle3_container {
+    height: 155px;
+    width: 155px;
+    background: url('./images/pexels-codioful-6985003.jpg');
+    background-size: cover;
+    background-position: cover;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(4px);
+}
+.circle3 {
+    height: 145px;
+    width: 145px;
+    border-radius: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: #000;
+}
+
+#circle span {
+    font-family: Gilroy-sbold;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#page {
+    height: fit-content;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    color: #fff;
+}
+
+#page h1 {
+    font-family: Gilroy-sbold;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    z-index: 10;
+}
+
+#page #activity {
+    display: flex;
+    gap: 10px;
+}
+
+#page #activity .card {
+    background: #ffffff1a;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 1.3vh 3vw;
+    border-radius: 6.5px;
+}
+
+#page #activity .card #count {
+    font-family: Gilroy-med;
+    font-size: 1.1rem;
+}
+
+.slider-container, .slider-container2, .slider-container3 {
+    width: 100%;
+    padding: 0 10px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Snap effect for smooth scrolling */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+    scrollbar-width: none;
+}
+
+.slider {
+    display: flex; /* Align slides horizontally */
+    gap: 10px;
+    width: max-content; /* Allow content to dictate width */
+    scroll-snap-type: x mandatory; /* Children align to snap points */
+    scroll-behavior: smooth; /* Smooth scroll */
+}
+
+.slide {
+    flex: 0 0 auto; /* Prevent the slides from shrinking */
+    min-width: fit-content; /* Each slide takes full viewport width */
+    padding: 6px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    scroll-snap-align: start; /* Start of each slide aligns with container */
+    border-radius: 5px; /* Optional: Round the edges of the slides */
+    font-family: Gilroy-light;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+}
+
+.slider-container2 .slider {
+    min-width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.slider-container2 .slider .slide {
+    font-size: 0.8rem;
+    border-radius: 100px;
+    border: 1px solid rgb(125, 205, 255);
+}
+
+.slider-container3 .slider .slide {
+    flex: 0 0 auto; /* Prevent the slides from shrinking */
+    min-width: 95vw; /* Each slide takes full viewport width */
+    padding: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    scroll-snap-align: start; /* Start of each slide aligns with container */
+    border-radius: 10px; /* Optional: Round the edges of the slides */
+    font-family: Gilroy-light;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    background-color: #ffffff14;
+}
+
+.slider-container3 .slider .slide .right {
+    height: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.slider-container3 .slider .slide .right .image {
+    height: 120px;
+    width: 130px;
+    background: url(./images/images\ \(1\).jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.slider-container3 .slider .slide .right .txtara {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.slider-container3 .slider .slide .right .txtara h1 {
+    font-size: 0.1rem;
+}
+
+.slider-container3 .slider .slide .right .txtara .foot {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.slider-container3 .slider .slide .right .txtara .foot span {
+    max-width: 100px;
+    background-color: #dadada;
+    color: #000;
+    padding: 5px 5px 4px 5px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-family: Gilroy-med;
+    font-size: 0.9rem;
+}
+ 
+.slider-container3 .slider .slide .right .txtara .foot h2 {
+    font-size: 0.7rem;
+    font-family: Gilroy-thin;
+    text-transform: lowercase;
+    margin-bottom: 2px;
+}
+.slide i {
+    padding: 5px;
+    border-radius: 100px;
+}
+
+footer {
+    opacity: 0.7;
+    padding: 2px 0 0 0;
+    width: 90%;
+    margin: 5vh;
+    height: 10vh;
+    border-top: 1px solid #fff;
+}
+
+footer h2 {
+    font-family: Gilroy-thin;
+    font-size: 1rem;
+}
+
+
+/* consultator.HTML */
+
+#searchPage {
+    min-height: 100vh;
+    width: 100%;
+    padding: 30px 20px;
+}
+
+#searchPage form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 10px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#searchPage form #srch {
+    width: 100%;
+    font-family: Gilroy-light;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 10px 40px 10px 10px; /* Padding adjusted for icon space */
+    outline: none; /* Remove outline when focused */
+    box-sizing: border-box;
+}
+
+#searchPage form #srch:focus {
+    border: none;
+    outline: none; /* Ensure no outline on focus */
+}
+
+#searchPage form #sub {
+    display: none;
+} 
+
+#searchPage form i {
+    position: absolute;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#searchPage h2 {
+    font-family: Gilroy-thin;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    color: #ffffff6b;
+    margin: 20px 0;
+}
+
+#searchPage #card {
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff15;
+    height: fit-content;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#searchPage #card #image {
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+    background-position: cover;
+    overflow: hidden;
+    border-radius: 100px;
+}
+
+#searchPage #card #image img {
+    width : 100%;
+    border-radius: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+#searchPage #card #txtera {
+    max-width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0 10px;
+}
+
+#searchPage #card #txtera h1 {
+    color: #fff;
+    font-family: Gilroy-med;
+    font-size: 1.3rem;
+}
+
+#searchPage #card #txtera p {
+    color: #fff;
+    font-family: Gilroy-light;
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+#searchPage #card #ratting {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#searchPage #card #ratting #star i {
+    margin-top: 12px;
+    font-size: 0.5rem;
+}
+
+#searchPage #card #ratting #pt {
+    color: #fff;
+    opacity: 0.7;
+    font-family: Gilroy-med;
+    font-size: 0.8rem;
+}
+
+#searchPage #p {
+    font-family: Gilroy-light;
+    font-size: 0.8rem;
+    color: #ffffff40;
+    text-align: end;
+    padding: 0 5px 0 0;
+}
