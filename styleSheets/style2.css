@@ -1,26 +1,26 @@
 @font-face {
     font-family: Gilroy;
-    src: url(/fonts/Gilroy-Black.woff2);
+    src: url(./fonts/Gilroy-Black.woff2);
 }
   
 @font-face {
     font-family: Gilroy-sbold;
-    src: url(/fonts/Gilroy-SemiBold.woff2);
+    src: url(./fonts/Gilroy-SemiBold.woff2);
 }
   
 @font-face {
     font-family: Gilroy-light;
-    src: url(/fonts/Gilroy-Light.woff2);
+    src: url(./fonts/Gilroy-Light.woff2);
 }
   
 @font-face {
     font-family: Gilroy-thin;
-    src: url(/fonts/Gilroy-Thin.woff2);
+    src: url(./fonts/Gilroy-Thin.woff2);
 }
   
 @font-face {
     font-family: Gilroy-med;
-    src: url(/fonts/Gilroy-Medium.woff2);
+    src: url(./fonts/Gilroy-Medium.woff2);
 }
 
 * {
@@ -75,7 +75,7 @@ nav i {
 #top #image {
     height: 110px;
     width: 110px;
-    background: url(/images/istockphoto-179011088-612x612.jpg);
+    background: url(./images/istockphoto-179011088-612x612.jpg);
     border-radius: 100px;
     background-size: cover;
 }
